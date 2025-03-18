@@ -35,6 +35,10 @@ body{
     /* padding: 10% 20%; */
 }
 
+.container{
+    padding: 0;
+}
+
 .prep-time ul {
     list-style: inside;
     display: flex;
@@ -110,11 +114,38 @@ table{
     width: 100%;
 }
 td{
-    border-bottom: 1px solid var(--Stone-150);
     padding:1rem 2rem;
+}
+
+tr.borderbottom td{
+    border-bottom: 1px solid var(--Stone-150);
 }
 
 td.num{
     color: var(--Brown-800);
     font-weight: 600;
+}
+
+@media only screen and (min-width: 1000px) {
+    body{
+        background-color: var(--Stone-150);
+        width: 100%;
+        padding: 10% 20%;
+    }
+    .container{
+        width: 100%;
+        background-color: var(--White);
+        border-radius: var(--radius-2);
+        padding: var(--padding);
+    }
+    .recipe{
+        border-radius: 0 0 var(--radius-2) var(--radius-2) ;
+        padding: 0;
+    }
+    img{
+        border-radius: var(--radius-1);
+    }
+    h1{
+        padding-top: 1.5rem;
+    }
 }
