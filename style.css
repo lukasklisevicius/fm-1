@@ -35,8 +35,11 @@ body{
     /* padding: 10% 20%; */
 }
 
-ul {
+.prep-time ul {
     list-style: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 h1{
@@ -53,16 +56,11 @@ h2{
     font-weight: 400;
     font-style: normal;
     color: var(--Brown-800);
+    margin: 1rem 0;
 }
 
 p{
     margin-bottom: 2rem;
-}
-
-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .recipe{
@@ -79,7 +77,7 @@ img{
 .prep-time{
     background-color: var(--Rose-50);
     border-radius: var(--radius-1);
-    padding: 1.5rem;
+    padding: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -88,3 +86,35 @@ img{
    margin-bottom: 1rem;
 }
 
+.instructions{
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.ingredients ul, .instructions ol{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ingredients ul li, .instructions ol li{
+    padding-left: 1rem;
+}
+
+.instructions ol li::marker{
+    font-weight: bold;
+    color: var(--Brown-800);
+}
+
+table{
+    width: 100%;
+}
+td{
+    border-bottom: 1px solid var(--Stone-150);
+    padding:1rem 2rem;
+}
+
+td.num{
+    color: var(--Brown-800);
+    font-weight: 600;
+}
