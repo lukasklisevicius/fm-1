@@ -31,6 +31,7 @@ body{
     font-optical-sizing: auto;
     color: var(--Stone-600);
     width: 100%;
+    height: 100%;
     /* padding: 10% 20%; */
 }
 
@@ -39,7 +40,7 @@ ul {
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     font-family: "Young Serif", serif;
     font-weight: 400;
@@ -78,10 +79,12 @@ img{
 .prep-time{
     background-color: var(--Rose-50);
     border-radius: var(--radius-1);
-    padding: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .prep-time h3{
-    color: var(--Rose-800);
+   color: var(--Rose-800);
+   margin-bottom: 1rem;
 }
 
